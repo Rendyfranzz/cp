@@ -110,6 +110,7 @@ func endpoint(w http.ResponseWriter, r *http.Request) {
 			w.Write([]byte(fmt.Sprint(res)))
 			return
 		}
+		// tambahin rule default
 	}
 
 	w.Write([]byte("semua rules gagal"))
