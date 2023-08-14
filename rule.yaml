@@ -1,0 +1,32 @@
+name: rule1
+
+body:
+  - name: nama
+    type: str
+
+  - name: harga
+    type: str
+
+  - name: jualan
+    type: number
+
+dictionary:
+  - attribute: harga
+    operator: "="
+    label: $hargalebih
+
+  - attribute: jualan
+    operator: "<"
+    label: $jualankurang
+
+action:
+  attribute: diskon
+  label: $diskon
+  type: number
+
+rule:
+  - value: ["harga", null]
+    action: 20
+
+  - value: ["sa", 10]
+    action: 10

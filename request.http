@@ -1,0 +1,4 @@
+POST http://localhost:7000
+Content-Type: application/json
+
+{ "nama" : "suki", "harga" : "harga", "jualan": 10 }
