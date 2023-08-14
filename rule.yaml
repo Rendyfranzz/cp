@@ -1,18 +1,18 @@
-name: rule1
-
+name: rule 1
+ednpoint: rule1
 body:
   - name: nama
     type: str
 
   - name: harga
-    type: str
+    type: number
 
   - name: jualan
     type: number
 
 dictionary:
   - attribute: harga
-    operator: "="
+    operator: ">"
     label: $hargalebih
 
   - attribute: jualan
@@ -24,9 +24,13 @@ action:
   label: $diskon
   type: number
 
+description:
+  - condition : sasasa
+  - action : sasasa
+
 rule:
-  - value: ["harga", null]
+  - value: [10, 5]
     action: 20
 
-  - value: ["sa", 10]
+  - value: [10, 10]
     action: 10
